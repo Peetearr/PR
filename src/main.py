@@ -47,7 +47,7 @@ class RightWall():
     t_fin = 0
     with mujoco.viewer.launch_passive(self.m, self.d) as viewer:
       with mujoco.Renderer(self.m, 400, 600) as renderer:
-          for i in range(1000000000):
+          while True:
             data = self.getdata()
             self.data = data
 
@@ -75,6 +75,7 @@ class RightWall():
                 self.error = 0
                 print('разворот на 180')
 
+            # расчет режима управления, в случае если развороты завершены
             if flag_init:
               if not(data[4] > .45 and ((data[6]>88 and data[6]<92) or (data[6]>178 and data[6]<182) or \
                (data[6]>268 and data[6]<272) or (data[6]>358 or data[6]<2))):
