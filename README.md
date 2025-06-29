@@ -1,6 +1,7 @@
 # Поиск выхода из лабиринта
 
-This is the official repository of [DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for General Objects Based on Simulation](https://arxiv.org/abs/2210.02697).
+**Цель работы:** Реализовать алгоритм управления мобильным роботом с дифференциальным приводом для выхода из лабиринта.<br />
+**Задачи:** <br /> --первая. <br /> --певая.
 
 [[project page]](https://pku-epic.github.io/DexGraspNet/)
 
